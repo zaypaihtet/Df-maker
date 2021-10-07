@@ -14,7 +14,7 @@ def Writertext(z):
 
 #Banner
 time.sleep(1)
-banner = RED + """
+banner ="""
          
 	\033[1;33;40m  ██████   ██████ █████ █████   █████████   ██████   █████ ██████   ██████   █████████   ███████████  
 	\033[1;33;40m ░░██████ ██████ ░░███ ░░███   ███░░░░░███ ░░██████ ░░███ ░░██████ ██████   ███░░░░░███ ░░███░░░░░███ 
@@ -48,6 +48,8 @@ Hacker_CN = input("\033[1;36;40m[+] Enter Your Name : ")
 print(" ")
 time.sleep(1)
 message = input("\033[1;36;40m[+] Enter Your Message On The Website (You Can Use <br> To Step Line Under) : ")
+print(" ")
+song = input("\033[1;36;40m[+] Enter Your Song link : ")
 print(" ")
 time.sleep(1)
 choice = input("\033[1;36;40m[+] Do You Want To Continue [y/n] : ")
@@ -278,9 +280,18 @@ code12 = message
 
 code13 = """</p>
     </div>
-	<br/><br/>
+	<br/><br/>"""
+
+code14 ="""<iframe width="0%" height="0" scrolling="no" frameborder="no" allow="autoplay" loop="true" src="""
+	
+code15 = song
+
+code16 ="""></iframe>"""
+
+code17 ="""
   </body>
 </html>"""
+
 
 if choice == "y":
 	time.sleep(3)
@@ -305,6 +316,10 @@ fo.write(code10)
 fo.write(code11)
 fo.write(code12)
 fo.write(code13)
+fo.write(code14)
+fo.write(code15)
+fo.write(code16)
+fo.write(code17)
 
 print(" ")
 print ("""The  df page has been generate as : df.html.
